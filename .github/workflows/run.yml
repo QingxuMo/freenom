@@ -20,8 +20,8 @@ on:
       - master
   schedule:
     - cron: 00 02 * * *
-  watch:
-    types: [started]
+  #watch:
+  #  types: [started]
 jobs:
   run-it:
     runs-on: ubuntu-18.04
@@ -55,4 +55,3 @@ jobs:
       - name: Run
         run: |
           php run
-# test
